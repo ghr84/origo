@@ -44,7 +44,7 @@ const ModalOrder = ({ closeModal, setBusinessKey }) => {
     return (
         <div className="create-del">
             <form onSubmit={handleSubmit} className="form-post">
-                <div onClick={closeModal} className="close-btn">X</div>
+                <div onClick={closeModal} className="close-btn">X</div>s
 
                 <label className="post-label" name="name" htmlFor="name">Nafn *</label>
                 <input type="text" placeholder="Nafn viðtakanda" name="name" id="name" onChange={handleChange}></input>

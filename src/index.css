@@ -133,9 +133,15 @@ h1 {
     border-bottom: 1px solid #D35B40;
     border-right: 1px solid #D35B40;
     border-left: 1px solid #D35B40;
-    padding: 0 0 2rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
+.barcode, svg {
+    margin: 0 auto;
+    box-shadow: 0px 3px 9px gainsboro;
+    height: 142px;
+    width: 380px;
+}
 .content-del {
     border-left: 1px solid #D35B40;
     border-right: 1px solid #D35B40;
@@ -259,6 +265,11 @@ span {
     width: 31px;
 }
 
+.create-del {
+    margin: 0 -59px 0 0;
+}
+
+
 /* Delivery form */
 
 .close-btn {
@@ -303,7 +314,7 @@ input {
 
 button, .location {
     height: 36.6px;
-    width: 120px;
+    width: 95px;
     font-size: 1rem;
     background-color: #FFFCE6;
     color: #824444;
