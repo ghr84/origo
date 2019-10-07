@@ -1,24 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header'
+import FirstPage from './components/FirstPage';
+import Login from './components/Login';
+import Orders from './components/Orders';
 
-function App() {
+import * as firebase from 'firebase';
+
+
+
+function App() { 
+  const auth = firebase.auth(); 
+
+  const [loginData, setLoginData] = useState();
+  const handleLogin = (e) => {
+      setLoginData({ ...loginData, [e.target.name]: e.target.value });
+  }
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <FirstPage />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route path="/login" exact>
+           
+            <Login loginData={loginData} auth={auth} handleLogin={handleLogin} setUser={setIsUserLoggedIn}/>
+           
+          </Route>
+          <Route path="/Orders" exact>
+            {isUserLoggedIn?
+            <Orders auth={auth} setUser={setIsUserLoggedIn}/>
+              :"Notandi hefur verið skráður út"
+            }
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

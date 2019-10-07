@@ -1,13 +1,343 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #9D4D4D;
+    background-color: #FFFCE6;
+}
+
+
+.login-h2 {
+    text-align: left;
+    font-size: 1.825rem;
+    margin: 1.4rem 0;
+   
+}
+
+/* Fyrsta síða */
+
+ .logo {
+    margin: 0 auto;
+    background-image: url('./img/Logo.svg');
+    background-repeat: no-repeat;
+    height: 99px;
+    width: 189px;
+  
+}
+
+.page1-h1 {
+    margin: 0 auto;
+    width: 68%;
+    font-size: 2.313rem; 
+    line-height: 1.2;
+    font-family: 'Martel', serif;
+    text-align: left;
+}
+
+.page1-p {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 1.125rem; 
+    width: 65%;
+}
+
+.signIn-btn {
+    height: 64px;
+    width: 335px;
+    margin: 3rem 0 1.5rem;
+    background-color: #D35B40;
+    border-style: none;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
+
+span {
+   font-size: 1.25rem;
+}
+
+/* Login */
+
+main {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login-form {
+    margin: 0 auto;
+    width: 94%;
+}
+
+.inputs {
+    margin: 4rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.forgot-pw {
+    text-align: left;
+    font-size: 0.95rem;
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+.input-signIn {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 320px; 
+    color: #AD9E9E;
+    background-color: #FFFCE6;
+    box-shadow: 0px 2px 8px #D3D3D3;
+    border-style: none;
+}
+
+/* Home */
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: 1rem;
+    text-align: left;
+}
+
+/* .barcode {
+    margin: 0 auto;
+    width: 90%;
+} */
+
+.main {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.onRoute, .delivered {
+    margin: 0 0 3rem;
+}
+
+.content {
+    border-left: 1px solid #D35B40;
+    border-right: 1px solid #D35B40;
+    /* border-bottom: 1px solid #D35B40; */
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+}
+
+.input-data {
+    border-bottom: 1px solid #D35B40;
+    border-right: 1px solid #D35B40;
+    border-left: 1px solid #D35B40;
+    padding: 0 0 2rem 0;
+}
+
+.content-del {
+    border-left: 1px solid #D35B40;
+    border-right: 1px solid #D35B40;
+    border-bottom: 1px solid #D35B40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 4.3rem 0.5rem 0.5rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.3rem 0.3rem 0 0;
+    padding: 0.6rem;
+    background-color: #D35B40;
+    color: #FFFCE6; 
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid #D35B40;
+    border-right: 1px solid #D35B40;
+    padding: 0.5rem 3rem 0.5rem 2.3rem;
+    background-color: #F3846B;
+    color: #FFFCE6;
+}
+
+h3 {
+    margin: 0;
+}
+
+.arrow {
+    padding: 0 0.7rem 0 0;
+    background-image: url('../src/img/Vector.png');
+    background-repeat: no-repeat;
+    height: 9px;
+    width: 16px;
+}
+
+.arrow2 {
+    padding: 0 0.7rem 0 0;
+    background-image: url('../src/img/Vector2.png');
+    background-repeat: no-repeat;
+    height: 11px;
+    width: 16px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2.2rem 0.5rem 2.4rem;
+}
+
+.del-label {
+    font-size: 1rem;
+}
+
+span {
+    font-size: 1rem;
+}
+
+.ordersBtn {
+    padding: 0.5rem;
+    margin: 1.5rem 0 0 0;
+    width: 80%;
+    height: 48px;
+    font-size: 1.35rem;
+    border-style: none;
+    border-radius: 50px;
+    background-color: #D35B40;
+    color: #FFFCE6;
+}
+
+/*  Navbar */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 4rem;
+    background-color: #D35B40;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.orders {
+    background-image: url('./img/package.png');
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 36px;
+}
+
+.add {
+    background-image: url('./img/add.png');
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 75px;
+}
+
+.notification {
+    background-image: url('./img/bell.png');
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 31px;
+}
+
+/* Delivery form */
+
+.close-btn {
+    display: flex;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    color: navajowhite;
+    background-color: darkred;
+    width: 3%;
+    border-radius: 9px;
+}
+
+.form-post {
+    position: absolute;
+    top: 4.5%;
+    left: 1.8%;
+    box-shadow: 0px 0px 10px #969696;
+    border-radius: 6px;
+    width: 97vw;
+    height: 134%;
+    background-color: #FFFCE6;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.post-label {
+    color: #824444;
+    font-size: 1.25rem;
+    margin: 1rem 0.5rem;
+}
+
+input {
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 90%;
+    font-size: 1.125rem;
+    color: #AD9E9E;
+}
+
+button, .location {
+    height: 36.6px;
+    width: 120px;
+    font-size: 1rem;
+    background-color: #FFFCE6;
+    color: #824444;
+    border: 1px solid #824444;
+    border-radius: 2px;
+
+}
+
+.flex-btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 80%;
+   
+}
+
+.reg-btn {
+    margin: 2rem auto;
+    height: 48px;
+    width: 80%;
+    background-color: #D35B40;
+    color: #ffff;
+    border-radius: 50px;
+    font-size: 1.5rem;  
+}
+
+textarea {
+    height: 9rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
